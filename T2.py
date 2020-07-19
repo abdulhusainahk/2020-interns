@@ -16,14 +16,13 @@ for item in df:
         arr4.append(x[8:10])
 arr5=np.add(np.array(arr1),np.array(arr2))/2
 arr3=np.array(arr3)
-xlabel=Curr1+"-"+Curr2
+xlabel="Avg of ("+Curr1+"-"+Curr2+")"
 ti="("+Curr1+"-"+Curr2+") vs "+Curr3
 plt.title(ti)
 plt.xlabel(xlabel)
 plt.ylabel(Curr3)
 plt.scatter(arr5, arr3, c='blue',label="Day Number")
 plt.plot(arr5,arr3,c='red',linestyle='dashed',label="Trend")
-#plt.text(max(arr5),min(arr3),s="String",ha='right',va='bottom')
 for i,j,k in zip(arr5,arr3,arr4):
     plt.annotate(k,xy=(i,j),xytext=(5, 2),textcoords='offset points',ha='right',va='bottom')
 plt.legend()
