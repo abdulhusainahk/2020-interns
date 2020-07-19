@@ -20,6 +20,7 @@ arr5=np.add(np.array(arr1),np.array(arr2))/2
 arr3=np.array(arr3)
 xlabel=Curr1+"-"+Curr2
 ti="("+Curr1+"-"+Curr2+") vs "+Curr3
+plt.figure(figsize=(10,5))
 plt.title(ti)
 plt.xlabel(xlabel)
 plt.ylabel(Curr3)
