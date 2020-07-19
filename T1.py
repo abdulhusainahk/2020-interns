@@ -17,7 +17,7 @@ plt.title(ti)
 plt.xlabel(Curr1)
 plt.ylabel(Curr2)
 plt.plot(arr2,arr1,c='red')
+plt.scatter(arr2, arr1, c='blue',label='Day Number')
 for i,j,k in zip(arr2,arr1,arr3):
-    plt.scatter(i,j,c='blue')
     plt.annotate(k,xy=(i,j),xytext=(5, 2),textcoords='offset points',ha='right',va='bottom')
 plt.show()
